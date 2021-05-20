@@ -1,0 +1,408 @@
+/* обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* обнуление */
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  width: 1440px;
+  min-height: 100vh;
+  background-color: #cccccc;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  transition: all 0.2s;
+}
+
+.top {
+  background: url(assets/images/fox.png);
+  background-size: cover;
+  color: #f7f7f7;
+  height: 779px;
+  background-color: #02160b;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 19px;
+}
+
+.logo {
+  color: #f7f7f7;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.logo__name {
+  margin-left: 15px;
+}
+
+.menu__list {
+  list-style: none;
+  display: flex;
+  font-size: 23px;
+
+  align-items: center;
+
+  height: 60px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #f7f7f7;
+  margin-left: 63px;
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.menu__link:hover {
+  color: #cd6326;
+}
+
+a svg:hover #search {
+  fill: #cd6326;
+}
+
+a svg #search {
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.button {
+  display: inline-block;
+  border: 2px solid #cd6326;
+  background: none;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 60px;
+  color: #f7f7f7;
+  transition: all 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.menu .button:hover {
+  background: #cd6326;
+}
+
+.menu .button:active {
+  background: #8f5613;
+  border: 2px solid #8f5613;
+}
+
+.survival {
+  position: absolute;
+  top: 199px;
+}
+
+.survival h1 {
+  font-size: 48px;
+  color: #cd6326;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 72px;
+}
+
+.survival p {
+  width: 274px;
+  margin-top: 52px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.survival button {
+  margin-top: 48px;
+  width: 160px;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 23px;
+  background: #cd6326;
+  color: #f7f7f7;
+}
+
+.survival button:hover {
+  background: #e39128;
+}
+
+.survival button:active {
+  background: #8f5613;
+}
+
+.articles {
+  text-align: center;
+}
+
+.slider__button {
+  background: none;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 72px;
+  color: #333333;
+  font-weight: 400;
+  margin-top: 122px;
+}
+
+.heading-text p {
+  font-size: 24px;
+  color: #666666;
+  margin-top: 25px;
+  margin-bottom: 125px;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 360px;
+  width: 298px;
+}
+
+.slider__text {
+  position: absolute;
+  bottom: 40px;
+  color: #f7f7f7;
+}
+
+.slider__animal {
+  font-size: 22px;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+
+.slider__article-description {
+  font-size: 17px;
+  line-height: 27px;
+}
+
+.subscription {
+  text-align: center;
+}
+
+h3 {
+  color: #333333;
+  margin-top: 240px;
+  font-size: 27px;
+  line-height: 40.5px;
+  font-weight: 400;
+}
+
+.mail-form {
+  margin-top: 60px;
+  margin-bottom: 238px;
+  display: flex;
+  justify-content: center;
+}
+
+.mail-form__input {
+  width: 540px;
+  height: 62px;
+  font-size: 23px;
+  color: #666666;
+  padding-left: 15px;
+  background: #cccccc;
+  border: 1px solid #666666;
+  border-right: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.mail-form__send {
+  width: 122px;
+  height: 62px;
+  background: #cd6326;
+  border: 1px solid #cd6326;
+  border-radius: 0px 5px 5px 0px;
+  font-size: 23px;
+  color: #f7f7f7;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  transition: all 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.mail-form__send:hover {
+  background: #e39128;
+  border: #e39128;
+  cursor: pointer;
+}
+
+.mail-form__send:active {
+  background: #8f5613;
+  border: none;
+}
+
+footer {
+  background: url(assets/images/leaves.jpg);
+  height: 359px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-menu__list {
+  list-style: none;
+  display: flex;
+  font-size: 23px;
+  line-height: 60px;
+  align-items: center;
+  margin-left: 41px;
+}
+
+.footer-menu__link {
+  margin-left: 43px;
+  margin-right: 45px;
+  text-decoration: none;
+  color: #f7f7f7;
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.footer-menu__link:hover {
+  color: #cd6326;
+}
+
+button svg:hover #left,
+button svg:hover #right {
+  fill: #cd6326;
+}
+
+button svg #left,
+button svg #right {
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.icons-list {
+  display: flex;
+}
+
+.icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: 27px;
+}
+
+a svg:hover #facebook,
+a svg:hover #instagram,
+a svg:hover #pinterest,
+a svg:hover #telegram {
+  fill: #cd6326;
+}
+
+.telegram,
+.facebook,
+.instagram,
+.pinterest {
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+}
